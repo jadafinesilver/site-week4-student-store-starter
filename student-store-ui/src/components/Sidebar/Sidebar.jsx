@@ -33,6 +33,10 @@ function Sidebar({ cart, isOpen, products, userInfo, setUserInfo, toggleSidebar,
           order={order}
           setOrder={setOrder}
         />
+        {/* added to have something happen when submit is clicked */}
+        <button onClick={handleOnCheckout} disabled={isCheckingOut}>
+        {isCheckingOut ? "Processing..." : "Submit Order"}
+        </button>
         
       </div>
     </section>

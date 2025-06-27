@@ -7,11 +7,26 @@ import "./ProductDetail.css";
 
 function ProductDetail({ addToCart, removeFromCart, getQuantityOfItemInCart }) {
   
-  const { productId } = useParams();
+  const { productId } = useParams(); //changed because i called it something different
   const [product, setProduct] = useState(null);
   const [isFetching, setIsFetching] = useState(false);
   const [error, setError] = useState(null);
-
+  // step 3 -> fetch specfic product
+  useEffect (() => {
+    setIsFetching(true);
+    setError(null);
+    axios.get(`http://localhost:3000/products/${productId}`)
+  .then(response => {
+    const prod = response.data;
+    prod.id = prod.product_id;
+    setProduct(prod);
+  })
+  .catch(error => {
+    console.error("error fetching product", error);
+    setError(error);
+  })
+  setIsFetching(false);
+  }, [productId]); 
 
   if (error) {
     return <NotFound />;

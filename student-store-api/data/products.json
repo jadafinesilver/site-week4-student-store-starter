@@ -1,7 +1,8 @@
+
 {
     "products": [
       {
-        "id": 1,
+        "product_id": 1,
         "name": "College Hoodie",
         "category": "Apparel",
         "image_url": "https://tinyurl.com/college-hoodie",
@@ -9,7 +10,7 @@
         "price": 29.99
       },
       {
-        "id": 2,
+        "product_id": 2,
         "name": "Algebra Textbook",
         "category": "Books",
         "image_url": "https://tinyurl.com/algebra-book",
@@ -17,7 +18,7 @@
         "price": 59.99
       },
       {
-        "id": 3,
+        "product_id": 3,
         "name": "College Notebook",
         "category": "Supplies",
         "image_url": "https://tinyurl.com/college-notebook",
@@ -25,7 +26,7 @@
         "price": 6.99
       },
       {
-        "id": 4,
+        "product_id": 4,
         "name": "College Pen",
         "category": "Supplies",
         "image_url": "https://tinyurl.com/college-pen",
@@ -33,7 +34,7 @@
         "price": 1.99
       },
       {
-        "id": 5,
+        "product_id": 5,
         "name": "College Mug",
         "category": "Accessories",
         "image_url": "https://tinyurl.com/college-mug",
@@ -41,7 +42,7 @@
         "price": 9.99
       },
       {
-        "id": 6,
+        "product_id": 6,
         "name": "College Beanie",
         "category": "Apparel",
         "image_url": "https://tinyurl.com/college-beanie",
@@ -49,7 +50,7 @@
         "price": 14.99
       },
       {
-        "id": 7,
+        "product_id": 7,
         "name": "Energy Drink",
         "category": "Snacks",
         "image_url": "https://tinyurl.com/cp-energy-drink",
@@ -57,7 +58,7 @@
         "price": 2.99
       },
       {
-        "id": 8,
+        "product_id": 8,
         "name": "Chocolate Bar",
         "category": "Snacks",
         "image_url": "https://tinyurl.com/cp-chocolate-bar",
@@ -65,7 +66,7 @@
         "price": 1.49
       },
       {
-        "id": 9,
+        "product_id": 9,
         "name": "Granola Bar",
         "category": "Snacks",
         "image_url": "https://tinyurl.com/cp-granola-bar",

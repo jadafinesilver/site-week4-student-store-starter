@@ -1,5 +1,6 @@
 import "./PaymentInfo.css"
 
+
 export default function PaymentInfo({ userInfo, setUserInfo, handleOnCheckout, isCheckingOut, error }) {
   return (
     <div className="PaymentInfo">
@@ -15,14 +16,17 @@ export default function PaymentInfo({ userInfo, setUserInfo, handleOnCheckout, i
           <input
             className="input"
             type="text"
-            placeholder="Name"
+            placeholder="Enter your student ID"
             value={userInfo.name}
             onChange={(e) => setUserInfo((u) => ({ ...u, name: e.target.value }))}
+            
           />
+          
         </div>
       </div>
 
-      <div className="input-field">
+      {/* just ignore this for now */}
+      {/* <div className="input-field">
         <label className="label">Dorm Room Number</label>
         <div className="control">
           <input
@@ -33,7 +37,7 @@ export default function PaymentInfo({ userInfo, setUserInfo, handleOnCheckout, i
             onChange={(e) => setUserInfo((u) => ({ ...u, email: e.target.value }))}
           />
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="field">
         <div className="control">
